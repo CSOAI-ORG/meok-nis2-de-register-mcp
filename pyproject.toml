@@ -24,3 +24,6 @@ only-include = ["server.py"]
 
 [project.scripts]
 meok-nis2-de-register-mcp = "server:main"
+
+[tool.mcp]
+mcpName = "io.github.CSOAI-ORG/meok-nis2-de-register-mcp"
