@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "meok-nis2-de-register-mcp"
-version = "1.0.1"
+version = "1.0.2"
 description = "Germany NIS2 BSI registration MCP. Generates BSI-portal-ready (Mein Unternehmenskonto) registration packets for the ~30,000 German Mittelstand orgs in NIS2 scope. Validates org profile, classifies sector + size + entity type per BSIG (NIS2-Umsetzungsgesetz, in force 6 Dec 2025), generates the registration data structure, emits HMAC-signed proof of readiness. Late registration = €2M fines + management body personal liability under §38b BSIG. Built for the April–May 2026 deadline window. By MEOK AI Labs."
 license = {file = "LICENSE"}
 readme = "README.md"
