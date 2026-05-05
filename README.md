@@ -1,5 +1,10 @@
 # meok-nis2-de-register-mcp
 
+[![PyPI version](https://img.shields.io/pypi/v/meok-nis2-de-register-mcp)](https://pypi.org/project/meok-nis2-de-register-mcp/)
+[![PyPI downloads](https://img.shields.io/pypi/dw/meok-nis2-de-register-mcp)](https://pypistats.org/packages/meok-nis2-de-register-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
 ## Why this exists
 
 Germany NIS2 (NIS2-Umsetzungs- und Cybersicherheitsstärkungsgesetz, 'NIS2UmsuCG') has a hard registration deadline at the BSI portal. **Of an estimated 30,000+ obligated entities, only ~11,500 had registered by the 6 March 2026 deadline.** That means ~18,000 Mittelstand firms are currently non-compliant and exposed to penalties.
