@@ -174,6 +174,17 @@ def validate_org_profile(
     When NOT to use:
         Do not use as a substitute for qualified legal counsel. This tool
         provides technical compliance guidance, not legal advice.
+
+    Args:
+        org_name (str): The org name to analyze or process.
+        legal_form (str): The legal form to analyze or process.
+        sector (str): The sector to analyze or process.
+        employees (int): The employees to analyze or process.
+        turnover_million_eur (float): The turnover million eur to analyze or process.
+        balance_sheet_million_eur (float): The balance sheet million eur to analyze or process.
+        delivers_critical_service (bool): The delivers critical service to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -269,7 +280,25 @@ def generate_bsi_packet(
     When NOT to use:
         Do not use as a substitute for qualified legal counsel. This tool
         provides technical compliance guidance, not legal advice.
-    """
+    
+
+    Args:
+        org_name (str): The org name to analyze or process.
+        legal_form (str): The legal form to analyze or process.
+        register_court (str): The register court to analyze or process.
+        register_number (str): The register number to analyze or process.
+        sector (str): The sector to analyze or process.
+        sub_sector (str): The sub sector to analyze or process.
+        services_csv (str): The services csv to analyze or process.
+        employees (int): The employees to analyze or process.
+        turnover_million_eur (float): The turnover million eur to analyze or process.
+        contact_name (str): The contact name to analyze or process.
+        contact_role (str): The contact role to analyze or process.
+        contact_email (str): The contact email to analyze or process.
+        contact_phone (str): The contact phone to analyze or process.
+        head_office_address (str): The head office address to analyze or process.
+        nationally_offered_services (bool): The nationally offered services to analyze or process.
+        api_key (str): The api key to analyze or process."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": STRIPE_499_ONE_OFF})
@@ -367,6 +396,10 @@ def submit_to_mein_unternehmenskonto(api_key: str = "") -> str:
     When NOT to use:
         Do not use as a substitute for qualified legal counsel. This tool
         provides technical compliance guidance, not legal advice.
+
+    Args:
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -435,6 +468,14 @@ def signed_registration_proof(
     When NOT to use:
         Do not use as a substitute for qualified legal counsel. This tool
         provides technical compliance guidance, not legal advice.
+
+    Args:
+        org_name (str): The org name to analyze or process.
+        submitted_to_bsi_utc (str): The submitted to bsi utc to analyze or process.
+        bsi_anmeldebestaetigung_id (str): The bsi anmeldebestaetigung id to analyze or process.
+        api_key (str): The api key to analyze or process.
+        email (str): The email to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
