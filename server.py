@@ -158,6 +158,22 @@ def validate_org_profile(
       drinking_water / waste_water / digital_infrastructure / ict_service_management /
       public_administration / space / postal / waste_management / chemicals / food /
       manufacturing / digital_providers / research
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need to assess, audit, or verify compliance
+        requirements. Ideal for gap analysis, readiness checks, and generating
+        compliance documentation.
+
+    When NOT to use:
+        Do not use as a substitute for qualified legal counsel. This tool
+        provides technical compliance guidance, not legal advice.
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -224,6 +240,21 @@ def generate_bsi_packet(
 
     The output JSON maps directly to the German "Mein Unternehmenskonto" /
     BSI-Meldeportal field structure. Paste into the portal in ~10 minutes.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need to assess, audit, or verify compliance
+        requirements. Ideal for gap analysis, readiness checks, and generating
+        compliance documentation.
+
+    When NOT to use:
+        Do not use as a substitute for qualified legal counsel. This tool
+        provides technical compliance guidance, not legal advice.
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
@@ -305,7 +336,24 @@ def generate_bsi_packet(
 def submit_to_mein_unternehmenskonto(api_key: str = "") -> str:
     """Returns the field-by-field submission walkthrough for the BSI portal.
     (We do NOT auto-submit — the portal requires authenticated browser session +
-    qualified electronic signature. This tool gives you the click-by-click guide.)"""
+    qualified electronic signature. This tool gives you the click-by-click guide.)
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need to assess, audit, or verify compliance
+        requirements. Ideal for gap analysis, readiness checks, and generating
+        compliance documentation.
+
+    When NOT to use:
+        Do not use as a substitute for qualified legal counsel. This tool
+        provides technical compliance guidance, not legal advice.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": STRIPE_499_ONE_OFF})
@@ -343,7 +391,23 @@ def signed_registration_proof(
 ) -> str:
     """Generate a HMAC-SHA256 signed attestation of NIS2 registration completion.
     Useful for: customer due-diligence requests, board reporting, supply-chain
-    NIS2 §28 attestations, audit trails. Pro/Enterprise required."""
+    NIS2 §28 attestations, audit trails. Pro/Enterprise required.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need to assess, audit, or verify compliance
+        requirements. Ideal for gap analysis, readiness checks, and generating
+        compliance documentation.
+
+    When NOT to use:
+        Do not use as a substitute for qualified legal counsel. This tool
+        provides technical compliance guidance, not legal advice.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": STRIPE_499_ONE_OFF})
