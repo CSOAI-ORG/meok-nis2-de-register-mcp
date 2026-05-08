@@ -1,40 +1,3 @@
-[![meok-nis2-de-register-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/meok-nis2-de-register-mcp/badges/score.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/meok-nis2-de-register-mcp)
-[![MCP Registry](https://img.shields.io/badge/MCP_Registry-Published-green)](https://registry.modelcontextprotocol.io)
-[![PyPI](https://img.shields.io/pypi/v/meok-nis2-de-register-mcp)](https://pypi.org/project/meok-nis2-de-register-mcp/)
-
-[![meok-nis2-de-register-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/meok-nis2-de-register-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/meok-nis2-de-register-mcp)
-
-# meok-nis2-de-register-mcp
-
-[![PyPI version](https://img.shields.io/pypi/v/meok-nis2-de-register-mcp)](https://pypi.org/project/meok-nis2-de-register-mcp/)
-[![PyPI downloads](https://img.shields.io/pypi/dw/meok-nis2-de-register-mcp)](https://pypistats.org/packages/meok-nis2-de-register-mcp)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
-
-## Why this exists
-
-Germany NIS2 (NIS2-Umsetzungs- und Cybersicherheitsstärkungsgesetz, 'NIS2UmsuCG') has a hard registration deadline at the BSI portal. **Of an estimated 30,000+ obligated entities, only ~11,500 had registered by the 6 March 2026 deadline.** That means ~18,000 Mittelstand firms are currently non-compliant and exposed to penalties.
-
-The BSI portal requires a 'Mein Unternehmenskonto' login + an Elster certificate before you can even start. The whole flow is in German. The Section 30 (KRITIS) and Section 32 (significant entities) classifications have ambiguities that consultancies are charging €5-15K to disambiguate.
-
-This MCP gives an AI agent the operational shortcut: classify your entity (essential / important / KRITIS), produce the BSI register payload, walk through Elster cert setup, and ship a signed compliance attestation. English-first interface so non-German compliance teams can support German subsidiaries.
-
-## Real usage example
-
-A UK group's German subsidiary realised in late March they'd missed the BSI registration deadline. Their UK compliance lead — who doesn't speak fluent German — needed to remediate fast. They installed:
-
-```
-pip install meok-nis2-de-register-mcp
-```
-
-Prompted Claude:
-
-> 'We are a logistics-tech subsidiary of a UK group, 280 employees, German GmbH, customers in DE/AT/CH. Classify us under NIS2-UmsuCG. Produce the Section 30/32 register payload + the timeline for catching up post-deadline.'
-
-Output: NIS2 classification = 'important entity' (not KRITIS), Section 32 register payload, a 7-day catch-up timeline with named BSI contact escalation paths, and a signed late-filing rationale document. Total time: 2 hours instead of the 4-week external-consultancy quote (€8K).
-
----
-
 # meok-nis2-de-register-mcp
 
 **BSI-portal-ready NIS2 registration packets for German Mittelstand orgs.**
@@ -83,6 +46,12 @@ Use code **`MEOKEAT`** at checkout for 25% off the first 3 months.
 
 Automated assistance for regulatory preparation. Does not substitute for qualified German legal counsel or BSI's binding determination. MEOK AI Labs provides no warranty of regulatory correctness.
 
+## Full Compliance Platform
+
+NIS2 is just one regulation. **[councilof.ai](https://councilof.ai)** covers EU AI Act, DORA, NIS2, CRA, CSRD compliance from £29/mo.
+
+→ **[Get started at councilof.ai](https://councilof.ai)**
+
 ## Related MEOK MCPs
 
 - [`nis2-compliance-mcp`](https://pypi.org/project/nis2-compliance-mcp/) — full NIS2 audit (all 27 EU Member States)
@@ -91,14 +60,6 @@ Automated assistance for regulatory preparation. Does not substitute for qualifi
 
 ## License
 
-MIT — MEOK AI Labs, 2026.
+MIT — [MEOK AI Labs](https://meok.ai), 2026.
 
----
-
-## Distribution channels
-
-- **PyPI**: `pip install meok-nis2-de-register-mcp`
-- **Apify Store** (Pay-Per-Event): https://apify.com/knowing_yucca/meok-nis2-de-register
-- **GitHub** (source): https://github.com/CSOAI-ORG/MEOK-LABS/tree/main/mcps/meok-nis2-de-register-mcp
-- **Sponsor**: https://github.com/sponsors/CSOAI-ORG · [Pro £79/mo →](https://buy.stripe.com/eVq9AV4O87sudMF42k8k839)
 <!-- mcp-name: io.github.CSOAI-ORG/meok-nis2-de-register-mcp -->
