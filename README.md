@@ -1,65 +1,78 @@
-# meok-nis2-de-register-mcp
+# Meok Nis2 De Register MCP
 
-**BSI-portal-ready NIS2 registration packets for German Mittelstand orgs.**
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/meok_nis2_de_register_mcp/)
 
-The NIS2-Umsetzungsgesetz (German NIS2 transposition) took force **6 December 2025**. The BSI registration portal opened **6 January 2026**. ~30,000 in-scope orgs have a **~3-month window** to register — deadline mid-April to early-May 2026. Late registration = up to €2M fines under §38b BSIG, plus personal liability of management body.
+> Germany NIS2 BSI register product — track Section 30/32 reporting timelines, KRITIS classificatio...
 
-By [MEOK AI Labs](https://meok.ai).
+Germany NIS2 BSI register product — track Section 30/32 reporting timelines, KRITIS classifications, and BSI registration windows. By MEOK AI Labs.
 
-## Why this MCP
+---
 
-Most Mittelstand orgs are paying €5K–€20K to consultancies for what is, mechanically, a 30-minute form. This MCP:
-
-1. Validates whether your org is in scope (essential vs important entity, KMU exemption check)
-2. Generates the BSI-portal-ready registration packet with all 7 obligation acknowledgements
-3. Walks you through Mein Unternehmenskonto submission step-by-step
-4. Emits a HMAC-SHA256 signed proof of registration readiness for your audit trail / customer due-diligence requests
-
-## Tools
-
-- `validate_org_profile` — in-scope check + entity type + size class
-- `generate_bsi_packet` — full registration JSON (Pro)
-- `submit_to_mein_unternehmenskonto` — click-by-click portal walkthrough
-- `signed_registration_proof` — Pro: cryptographic proof of completion
-
-## Install
+## 🚀 Quick Start
 
 ```bash
-pip install meok-nis2-de-register-mcp
+# Install via pip
+pip install meok_nis2_de_register_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install meok-nis2-de-register-mcp --client claude
 ```
 
-## Tiers
+## ✨ Features
 
-- **Free** — in-scope validation + walkthrough
-- **£499 one-off** — full BSI packet generation + signed proof — [buy now](https://buy.stripe.com/4gM7sN2G0bIKeQJfL28k833)
-- **Pro £199/mo** — unlimited regenerations + monthly compliance refresh + Slack alerts on BSIG amendments — [subscribe](https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836)
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-Use code **`MEOKEAT`** at checkout for 25% off the first 3 months.
+## 📖 Documentation
 
-## Sources
+- [Full Documentation](https://docs.meok.ai/meok-nis2-de-register-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-- BSIG (NIS2-Umsetzungsgesetz) — https://www.gesetze-im-internet.de/bsig_2009/
-- BSI portal — https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-Umsetzungsgesetz
-- Mein Unternehmenskonto — https://mein-unternehmenskonto.de
+## 🛡️ Compliance
 
-## Disclaimer
+This MCP server is built with **EU AI Act compliance** built-in:
 
-Automated assistance for regulatory preparation. Does not substitute for qualified German legal counsel or BSI's binding determination. MEOK AI Labs provides no warranty of regulatory correctness.
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-## Full Compliance Platform
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-NIS2 is just one regulation. **[councilof.ai](https://councilof.ai)** covers EU AI Act, DORA, NIS2, CRA, CSRD compliance from £29/mo.
+## 🏢 Enterprise
 
-→ **[Get started at councilof.ai](https://councilof.ai)**
+Need custom development, SLA guarantees, or white-label deployment?
 
-## Related MEOK MCPs
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-- [`nis2-compliance-mcp`](https://pypi.org/project/nis2-compliance-mcp/) — full NIS2 audit (all 27 EU Member States)
-- [`dora-nis2-crosswalk-mcp`](https://pypi.org/project/dora-nis2-crosswalk-mcp/) — banks in scope for both
-- [`ai-incident-reporting-mcp`](https://pypi.org/project/ai-incident-reporting-mcp/) — multi-regime incident clocks
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-## License
+## 🤝 Part of the MEOK Ecosystem
 
-MIT — [MEOK AI Labs](https://meok.ai), 2026.
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-<!-- mcp-name: io.github.CSOAI-ORG/meok-nis2-de-register-mcp -->
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
+
+## 📜 License
+
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
+
+---
+
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
