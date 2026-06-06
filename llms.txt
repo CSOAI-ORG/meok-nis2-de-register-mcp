@@ -1,0 +1,28 @@
+# Meok Nis2 De Register MCP
+
+> Germany NIS2 BSI register product — track Section 30/32 reporting timelines, KRITIS classificatio...
+
+`meok-nis2-de-register-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install meok-nis2-de-register-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx meok-nis2-de-register-mcp
+```
+
+## Tools
+
+See the package README for the full tool list: https://pypi.org/project/meok-nis2-de-register-mcp/
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/meok-nis2-de-register-mcp
+- PyPI: https://pypi.org/project/meok-nis2-de-register-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
